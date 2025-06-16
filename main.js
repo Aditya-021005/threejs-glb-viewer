@@ -18,7 +18,7 @@ scene.add(light);
 const loader = new GLTFLoader();
 let mixer;
 
-loader.load('/Untitled.glb', (gltf) => {
+loader.load('Untitled.glb', (gltf) => {
   const model = gltf.scene;
   scene.add(model);
   if (gltf.animations && gltf.animations.length) {
